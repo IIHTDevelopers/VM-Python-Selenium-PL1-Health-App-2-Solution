@@ -162,7 +162,7 @@ def test_add_progress_note_for_patient(setup_driver):
         print("test_add_progress_note_for_patient = Passed")
     else:
         passed = False
-        test_obj.yakshaAssert("TestValidLogin", False, "Functional")
+        test_obj.yakshaAssert("test_add_progress_note_for_patient", False, "Functional")
         print("test_add_progress_note_for_patient = Failed")
 
 @pytest.mark.order(5)
@@ -313,7 +313,7 @@ def test_edit_tds_for_employee(setup_driver):
     if (testResult == True and verificationResult == True):
         passed = True
         test_obj.yakshaAssert("test_edit_tds_for_employee", True, "Functional")
-        print("Ttest_edit_tds_for_employee = Passed")
+        print("test_edit_tds_for_employee = Passed")
     else:
         passed = False
         test_obj.yakshaAssert("test_edit_tds_for_employee", False, "Functional")
@@ -407,12 +407,12 @@ def test_verify_tooltip_text(setup_driver):
     time.sleep(5)
     if (testResult == True and verificationResult == True):
         passed = True
-        test_obj.yakshaAssert("TestValidLogin", True, "Functional")
-        print("TestValidLogin = Passed")
+        test_obj.yakshaAssert("test_verify_tooltip_text", True, "Functional")
+        print("test_verify_tooltip_text = Passed")
     else:
         passed = False
-        test_obj.yakshaAssert("TestValidLogin", False, "Functional")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_verify_tooltip_text", False, "Functional")
+        print("test_verify_tooltip_text = Failed")
 
 @pytest.mark.order(13)
 def test_capture_inventory_requisition_screenshot(setup_driver):
@@ -442,7 +442,7 @@ def test_capture_inventory_requisition_screenshot(setup_driver):
     else:
         passed = False
         test_obj.yakshaAssert("test_capture_inventory_requisition_screenshot", False, "Functional")
-        print("TestValidLogin = Failed")
+        print("test_capture_inventory_requisition_screenshot = Failed")
 
 @pytest.mark.order(14)
 def test_verify_field_level_error_message(setup_driver):
